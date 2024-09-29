@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Media Queries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* Estilos para telas grandes */
+    @media (min-width: 768px) {
+      .container {
+        background-color: lightgreen;
+      }
+    }
+
+    /* Estilos para telas muito grandes (desktop) */
+    @media (min-width: 1024px) {
+      .container {
+        background-color: lightcoral;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    Este layout muda de cor com base na largura da tela!
+  </div>
+</body>
+</html>

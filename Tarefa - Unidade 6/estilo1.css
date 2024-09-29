@@ -1,0 +1,35 @@
+header{
+    width:500px;
+    margin:auto;
+    margin-top: 50px;
+    border-style: outset;
+    text-align: center;
+    padding: auto;
+}
+footer{
+    width: 300px;
+    margin:auto;
+    text-align: center;
+    padding: center;
+}
+:root {
+--green: #7fffd4;
+--gray: #808080;
+--lgray: #a9a9a9;
+}
+body{ background-color: var(--gray);}
+header{background-color: var(--green);}
+
+#home{
+    text-align: center;
+}
+#tab1{
+    background-color: var(--lgray);
+    width: 682px;
+    margin: auto;
+}
+#tabCad{
+    background-color: var(--lgray);
+    width: 647px;
+    margin: auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo CSS Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanhos iguais */
+      grid-gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Layout para telas pequenas */
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr; /* Em telas pequenas, todos os itens ocupam 1 coluna */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+    <div class="box">Item 4</div>
+    <div class="box">Item 5</div>
+    <div class="box">Item 6</div>
+  </div>
+</body>
+</html>
